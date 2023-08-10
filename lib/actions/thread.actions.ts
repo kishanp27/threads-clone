@@ -39,7 +39,7 @@ export async function createThread({
   }
 }
 
-export async function fetchPosts(pageNumber = 1, pageSize = 20){
+export async function fetchPosts(pageNumber = 1, pageSize = 20, pathname='/'){
   connectToDB();
 
   // for pagination, we need to calculate which page we are on and skip the number of posts accordingly
